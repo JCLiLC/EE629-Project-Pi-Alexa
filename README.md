@@ -11,7 +11,8 @@ Required hardware
 Input and output setups
 ---
 * In your Raspberry Pi Terminal, type 'arecord -l' to see your input devices. In this case, your device is card 1,device 0. 
-    **** List of CAPTURE Hardware Devices ****    
+
+        **** List of CAPTURE Hardware Devices ****    
     card 1: VR [1MORE Spearhead VR], device 0: USB Audio [USB Audio]    
        Subdevices: 0/1    
      Subdevice #0: subdevice #0    
