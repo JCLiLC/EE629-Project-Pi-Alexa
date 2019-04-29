@@ -8,6 +8,10 @@ Required hardware
 * An USB 2.0 microphone with a build-in sound card
 * An external speaker with 3.5mm audio cable
 
+Input and output setups
+---
+* In your Raspberry Pi Terminal, type 'arecord -l'
+
 Register a new product
 ---
 * Go to https://developer.amazon.com, log in to your account
@@ -15,3 +19,6 @@ Register a new product
 * Fullfill product information, click next
 * Click CREATE NEW PROFILE, fill the imformations, click next
 ![Image text](https://github.com/JCLiLC/EE629-Project-Pi-Alexa/blob/master/images/Screen%20Shot%202019-04-29%20at%204.33.39%20PM.png)
+* Choose Other devices and platforms, generate your ID, then download your config.json profile
+![Image text](https://github.com/JCLiLC/EE629-Project-Pi-Alexa/blob/master/images/Screen%20Shot%202019-04-29%20at%204.37.28%20PM.png)
+
