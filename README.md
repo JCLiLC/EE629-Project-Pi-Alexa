@@ -88,3 +88,28 @@ Authorization
        #       Alexa is currently idle!       #
        ########################################
 * You are all set! Run startsample.sh again and Alexa should work on your Raspberry Pi.
+
+AirPlay
+===
+This is an additional function if you want to use AirPlay on your iphone to realize wireless control on your Rasperry Pi speaker 
+
+Setup
+---
+* git clone https://github.com/JCLiLC/EE629-Project-Pi-Alexa 
+*  Type codes below to install necessary libraries.
+
+       sudo apt-get install git libao-dev libssl-dev libcrypt-openssl-rsa-perl libio-socket-inet6-perl libwww-perl avahi-utils libmodule-build-perl
+* cd perl-net-sdp-master, type the followings to finish installation:
+
+       cd perl-net-sdp 
+       perl Build.PL
+       Type in sudo ./Build 
+       Type in sudo ./Build test 
+       Type in sudo ./Build install
+* git clone https://github.com/abrasive/shairport and then cd shairport
+* Type:
+
+       ./configure
+       make
+       ./shairport -a 'My AirPlay Name'
+* Now you will see you My AirPlay Name on your iphone AirPlay
