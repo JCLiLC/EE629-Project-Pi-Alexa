@@ -57,4 +57,34 @@ Register a new product
 * Choose Other devices and platforms, generate your ID, then download your config.json profile
 ![Image text](https://github.com/JCLiLC/EE629-Project-Pi-Alexa/blob/master/images/Screen%20Shot%202019-04-29%20at%204.37.28%20PM.png)
 
+Setup
+---
+* Download the installation and configuration scripts.
 
+       wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/setup.sh \
+       wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/genConfig.sh \
+       wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/pi.sh
+* Move the config.json file you downloaded before to the home directory. Then run it useing:
+
+       sudo bash setup.sh config.json -s 123456
+       
+Authorization
+---
+* Run the sample app for the first time:
+       
+       sudo bash startsample.sh
+* Then you will see the followings:
+
+       ######################################################
+       #       > > > > > NOT YET AUTHORIZED < < < < <       #
+       ######################################################
+
+       ############################################################################################
+       #     To authorize, browse to: 'https://amazon.com/us/code' and enter the code: {XXXX}     #
+       ############################################################################################
+* Don't stop the terminal, go to https://amazon.com/us/code and enter the code. Then you will see the following in the terminal:
+
+       ########################################
+       #       Alexa is currently idle!       #
+       ########################################
+* You are all set! Run startsample.sh again and Alexa should work on your Raspberry Pi.
