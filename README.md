@@ -1,11 +1,11 @@
 # EE629-Project-Pi-Alexa
 
-An alexa smart speaker based on Raspberry Pi
+An Alexa Smart Speaker based on Raspberry Pi
 ===
 Required hardware
 ---
 * Raspberry Pi 3, power cable and a monitor
-* An USB 2.0 microphone with a build-in sound card
+* A USB 2.0 microphone with a build-in sound card
 * An external speaker with 3.5mm audio cable
 
 Input and output setups
@@ -112,4 +112,4 @@ Setup
        ./configure
        make
        ./shairport -a 'My AirPlay Name'
-* Now you will see you My AirPlay Name on your iphone AirPlay
+* Now you will see My AirPlay Name on your iphone AirPlay
